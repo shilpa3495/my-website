@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Concert+One');
+@import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+html{
+    font-size: 16px;
+}
+.container{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+}
+.top-right{
+    width:5%;
+    height:10%;
+    background: #0F17D5;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    border-radius:0% 0% 0% 90%;
+}
+.bottom-left{
+    position: absolute;
+	bottom: 0%;
+    left: 0;
+    width:10%;
+    height: 15%;
+    background: linear-gradient(#ffffff ,#6F4CC5);
+    border-radius:0% 90% 0% 0%;
+}
+
+.ball{
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    background: linear-gradient(#0F17D5 ,#6F4CC5);
+    border-radius: 50%;
+    transform:translate(-50%,50%);
+    overflow: hidden;
+    animation: animate 2.5s linear infinite;
+    left:40%;
+    bottom: 60%;
+    border:2px solid #ffffff;
+    box-shadow:0px 0px 10px #b2b2b2;
+}
+@keyframes animate {
+    0% {
+        transform: translate(-50%,-50%) translateX(90%) rotate(0deg);
+    }
+    50% {
+        transform: translate(-50%,-50%) translateY(0px) rotate(180deg);
+    }
+    100% {
+        transform: translate(-50%,-50%) translateY(-20%) rotate(360deg);
+    }
+}
+.main-row{
+    padding-top: 12%;
+}
+.fa-bars{
+    color: #0F17D5 ;
+}
+.text-row{
+    padding-top: 10%;
+}
+.heading-1{
+    font-family: 'Concert One', cursive;
+}
+.text-1{
+    font-family: 'Patrick Hand', cursive;
+    font-size:1.2rem;
+}
+.check-button,.check-button:visited,.check-button:focus,.check-button:active{
+    border-radius:19px!important;
+    border:none!important;
+    background:linear-gradient(to right, #0F17D5 ,#6F4CC5)!important;
+    color:#ffffff!important;
+    box-shadow:0px 5px 15px #f3f7ff!important;
+    max-width: 100%;
+}
+.link-row{
+    padding-top: 20%;
+}
+.link-list{
+    display:inline;
+    list-style-type: none;
+    padding-right:5%;
+    font-size: 1.2rem;
+}
+.links{
+    color: black;
+    text-decoration: none;
+}
+.border{
+    width:5%;
+    height:10% ;
+    background:#0F17D5;
+    animation-name: border;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;  
+    }
+    @keyframes border{
+        0%{transform:translateX(0)}
+        10%{transform: translateX(100px)}
+        20%{transform: translateX(200px)}
+        30%{transform: translateX(300px)}
+        40%{transform: translateX(310px)}
+
+    }
+.links:hover{
+    text-decoration: none;
+    color:black;
+}    
+.second-col{
+    background: linear-gradient(#0F17D5 ,#6F4CC5);
+    border-radius:250px 0px 0px 250px;
+    width:50%;
+    height: auto;
+}
